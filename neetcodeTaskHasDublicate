@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        int [] nums1 = {1, 2, 3, 3}; // true
+        int [] nums2 = {1, 2, 3, 4}; // false
+        System.out.println();
+    }
+}
+class Solution {
+    public boolean hasDuplicate(int[] nums) {
+        boolean ifItHasDublicate = false;
+
+        for(int i = 0; i < nums.length; i++){
+            for(int j = i + 1; j < nums.length; j++){
+                if(nums[i] == nums[j]){
+                    ifItHasDublicate = true;
+                }
+            }
+        }
+        return ifItHasDublicate;
+    }
+
+}
