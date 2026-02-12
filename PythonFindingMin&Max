@@ -1,0 +1,16 @@
+#the same task findingMin&Max but in Python
+
+
+nums = [89, 87, 4, 67, 52, 69, 3, 2, 1, 32, 88]
+
+def findMin_findMax(arr):
+    min = arr[0]
+    max = arr[0]
+    for i in arr:
+        if i < min:
+            min = i
+        if i > max:
+            max = i
+    return "Min:", min, "and Max:", max
+
+print(findMin_findMax(nums))
